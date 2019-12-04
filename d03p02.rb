@@ -35,12 +35,9 @@ def create_field(input, origin)
   r1 = get_ranges input[0]
   r2 = get_ranges input[1]
 
-	puts "r1 #{r1}"
-	puts "r2 #{r2}"
-
   dimensions = [
-		[r1[0][1], r2[0][1]].max - [r1[0][0], r2[0][0]].min + 1,
-		[r1[1][1], r2[1][1]].max - [r1[1][0], r2[1][0]].min + 1,
+    [r1[0][1], r2[0][1]].max - [r1[0][0], r2[0][0]].min + 1,
+    [r1[1][1], r2[1][1]].max - [r1[1][0], r2[1][0]].min + 1,
   ]
 
   field = []
