@@ -4,8 +4,7 @@ const digits = n => {
 
     while (temp > 0) {
         d = temp % 10
-        temp -= d
-        temp /= 10
+        temp = Math.trunc(temp/10)
         output.push(d)
     }
 
