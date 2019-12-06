@@ -60,7 +60,7 @@ const intcode = (program, input = null) => {
                 break;
             case '5':
                 if (value1 !== 0) {
-                    console.log('heading -> ' + value2)
+                    // console.log('heading -> ' + value2)
                     pointer = value2
                 } else {
                     pointer += instruction.modes.length + 1;
