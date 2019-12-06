@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "description": "advent of code",
+  "main": "index.js",
+  "repository": "git@github.com:Hives/advent-of-code.git",
+  "author": "paul.martin <paul.y.martin@johnlewis.co.uk>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
