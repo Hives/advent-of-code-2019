@@ -1,4 +1,4 @@
-const digits = require('../../shared/digits.js')
+const digits = require('../../lib/digits.js')
 
 const aPairOfDigitsExists = n => {
     const d = digits(n);
