@@ -2,7 +2,8 @@
 
 <https://adventofcode.com/>
 
-Mostly in JavaScript, with day 3 done in Ruby. I did day 1 in Google Sheets so that is not included here.
+Mostly in JavaScript, with day 3 done in Ruby. I did day 1 in Google Sheets so
+that is not included here.
 
 ## Running the solutions
 
@@ -13,6 +14,7 @@ node days/XX/dXXpXX.js
 ```
 
 Ruby solution can be run with:
+
 ```
 ruby days/03/d03p0X.rb
 ```
@@ -24,7 +26,7 @@ Obviously you'll need node and/or ruby to do that.
 Some of the JS is tested in Jest. To run the tests:
 
 ```
-# to install:
+# first install with:
 yarn
 # to run the tests:
 yarn test

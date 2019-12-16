@@ -10,7 +10,8 @@
   "author": "paul.martin <paul.y.martin@johnlewis.co.uk>",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1"
   },
   "dependencies": {
     "node-fetch": "^2.6.0"
