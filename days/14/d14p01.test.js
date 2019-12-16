@@ -8,6 +8,7 @@ const {
   removeZeroKeys,
   reduce,
   calcOre,
+  calcMaxFuel,
 } = require('./d14p01.js');
 
 const { examples } = require('./puzzleInput.js');
@@ -161,4 +162,8 @@ test('fourth example', () => {
 
 test('fifth example', () => {
   expect(calcOre(examples[4])).toBe(2210736);
+});
+
+xtest('calc max fuel, fifth example', () => {
+  expect(calcMaxFuel(examples[4])).toBe(460664);
 });

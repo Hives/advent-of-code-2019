@@ -4,7 +4,7 @@
  */
 
 const { unique } = require('../../lib/arrayUtils.js');
-const { puzzleInput } = require('./puzzleInput.js');
+const { examples, puzzleInput } = require('./puzzleInput.js');
 
 const translateSingleLine = line => {
   if (line === '') return {};
@@ -152,7 +152,24 @@ const calcOre = (input, quantityOfFuel = 1) => {
   return data.products['ORE'];
 };
 
-console.log(calcOre(puzzleInput));
+const calcMaxFuel = (input, quantityOfOre = 1000000000000) => {
+  const min = 2267400;
+  const max = 2267500;
+  const inc = 1;
+
+  let quantityOfFuel = min;
+  while (
+    calcOre(input, quantityOfFuel) < quantityOfOre &&
+    quantityOfFuel < max
+  ) {
+    console.log(quantityOfFuel);
+    quantityOfFuel += inc;
+  }
+  return quantityOfFuel - inc;
+};
+
+// console.log(calcOre(puzzleInput));
+console.log(calcMaxFuel(puzzleInput));
 
 module.exports = {
   translateSingleLine,
@@ -164,4 +181,5 @@ module.exports = {
   removeZeroKeys,
   reduce,
   calcOre,
+  calcMaxFuel,
 };
