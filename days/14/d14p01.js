@@ -162,7 +162,6 @@ const calcMaxFuel = (input, quantityOfOre = 1000000000000) => {
     calcOre(input, quantityOfFuel) < quantityOfOre &&
     quantityOfFuel < max
   ) {
-    console.log(quantityOfFuel);
     quantityOfFuel += inc;
   }
   return quantityOfFuel - inc;
