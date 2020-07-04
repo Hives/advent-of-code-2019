@@ -107,12 +107,12 @@ def printy(input)
 end
 
 def do_the_thing(input)
-	parsed_input = parse_input(input)
-	origin = get_origin(parsed_input)
-	rendering = render(parsed_input)
-	crosses = get_crosses(rendering)
+  parsed_input = parse_input(input)
+  origin = get_origin(parsed_input)
+  rendering = render(parsed_input)
+  crosses = get_crosses(rendering)
 
-	closest_distance_from_origin(crosses, origin)
+  closest_distance_from_origin(crosses, origin)
 end
 
 inputs = [

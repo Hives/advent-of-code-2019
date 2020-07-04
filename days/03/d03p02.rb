@@ -75,7 +75,6 @@ def render_wire(wire, origin, field, wire_no)
 	cell[wire_no] = cell[wire_no] ? cell[wire_no] : steps
 	cell[2] = true if cell[0] && cell[1]
       end
-			# printy field
     end
   end
 end
@@ -87,6 +86,7 @@ def render(input)
   render_wire(input[0], origin, field, 0)
   render_wire(input[1], origin, field, 1)
 
+  printy field
   field
 end
 
